@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is; that is, (62.5/100)*16
+  font-size: 62.5%;
+
+  @media (max-width: 600px) {
+    font-size: 30%;
+  }
+  @media (max-width: 900px) {
+    font-size: 405%;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 1800px) {
+    font-size: 60%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+}
